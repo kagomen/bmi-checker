@@ -10,4 +10,4 @@ https://kagomen.github.io/bmi-checker/
 - CSS
 
 ## production period
-- 1 day
+1 day
