@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI checker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <main>
+      <h1>BMI checker 👣</h1>
+      <table>
+        <tr>
+          <td><label for="height">height</label></td>
+          <td><input id="height" name="height" placeholder="170" /></td>
+          <td>cm</td>
+        </tr>
+        <tr>
+          <td><label for="weight">weight</label></td>
+          <td><input id="weight" name="weight" placeholder="65" /></td>
+          <td>kg</td>
+        </tr>
+      </table>
+      <div class="button-wrapper">
+        <button class="check" onClick="calcVal()">check</button>
+        <button class="clear" onClick="clearVal()">clear</button>
+      </div>
+
+      <p>Your weight is <span id="message">...</span></p>
+
+      <table class="calc" border="1">
+        <tr>
+          <th>BMI</th>
+          <th>ideal weight</th>
+        </tr>
+        <tr>
+          <td>
+            <p id="result-calc">-</p>
+          </td>
+          <td>
+            <p><span id="ideal-weight">-</span> kg</p>
+          </td>
+        </tr>
+      </table>
+    </main>
+  </div>
+  <footer>
+    <p>Developed by <a href="https://github.com/kagomen">kagome</a> 2024
+  </footer>
+  </p>
+  <script src="main.js"></script>
+</body>
+
+</html>
