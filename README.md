@@ -9,5 +9,5 @@ https://kagomen.github.io/bmi-checker/
 - JavaScript
 - CSS
 
-## Production period
+## production period
 - 1 day
