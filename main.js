@@ -15,7 +15,8 @@ function calcVal() {
     alert("please enter a valid 💡");
     return;
   }
-  else if (bmi < 18.5) {
+
+  if (bmi < 18.5) {
     m.textContent = "under.";
   } else if (bmi >= 25) {
     m.textContent = "over.";
