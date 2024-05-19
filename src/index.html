@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI checker</title>
+  <link rel="stylesheet" href="input.css">
+  <link rel="stylesheet" href="output.css">
+</head>
+
+<body>
+  <div class="wrapper ">
+    <main class="shadow-xl rounded-xl">
+      <h1 class="text-3xl">BMI Checker 👣</h1>
+      <table class="text-xl">
+        <tr class="text-black">
+          <td><label for="height">Height </label></td>
+          <td><input class="px-1" id="height" name="height" placeholder="170" /></td>
+          <td>cm</td>
+        </tr>
+        <tr>
+          <td><label for="weight">Weight</label></td>
+          <td><input class="px-1" id="weight" name="weight" placeholder="65" /></td>
+          <td>kg</td>
+        </tr>
+      </table>
+      <div class="button-wrapper flex flex-col justify-center items-center space-y-4">
+        <button  style="box-shadow: inset 0 2px 4px 0 rgb(2 6 23 / 0.3), inset 0 -2px 4px 0 rgb(203 213 225);"
+        class=" inline-flex cursor-pointer items-center gap-1 rounded border border-slate-300 bg-gradient-to-b from-slate-50 to-slate-200 px-4 py-2 font-semibold hover:opacity-90 focus-visible:outline-none focus-visible:ring-1 text-stone-600 duration-500 hover:text-stone-950 focus-visible:ring-slate-300 focus-visible:ring-offset-2 active:opacity-100" onClick="calcVal()">Check</button>
+        <button onClick="clearVal()"
+  class="group flex items-center justify-start w-11 h-11 bg-red-600 rounded-full cursor-pointer relative overflow-hidden transition-all duration-200 shadow-lg hover:w-32 hover:rounded-lg active:translate-x-1 active:translate-y-1"
+>
+  <div
+    class="flex items-center justify-center w-full transition-all duration-300 group-hover:justify-start group-hover:px-3"
+  >
+    <svg class="w-4 h-4" viewBox="0 0 512 512" fill="white">
+      <path
+        d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"
+      ></path>
+    </svg>
+  </div>
+  <div
+    class="absolute right-5 transform translate-x-full opacity-0 text-white text-lg font-semibold transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100"
+  >
+    Clear
+  </div>
+</button>
+  </div>
+
+      <p>Your weight is <span class="font-semibold text-gray-900" id="message">...</span></p>
+
+      <table class="calc" border="1">
+        <tr>
+          <th>BMI</th>
+          <th>ideal weight</th>
+        </tr>
+        <tr>
+          <td>
+            <p id="result-calc">-</p>
+          </td>
+          <td>
+            <p><span id="ideal-weight">-</span> kg</p>
+          </td>
+        </tr>
+      </table>
+    </main>
+  </div>
+  <footer>
+    <p>Developed by <a href="https://github.com/kagomen">kagome</a> 2024
+  </footer>
+  </p>
+  <script src="main.js"></script>
+</body>
+
+</html>
